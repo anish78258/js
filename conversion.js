@@ -25,8 +25,8 @@ console.log(typeof NaN)
 // 3. -, *, / always convert operands to numbers.
 console.log(3 + 4 * 5 % 3)
 // first * % left to right // second + , - left to right
-console(+true)
-console(+"")
+// console(+true)
+// console(+"")
 let  num1 , num2 , num3;
 
 num1 = num2 = num3 = 2 + 2
@@ -40,3 +40,25 @@ console.log(undefined > 0)
 console.log(undefined < 0)
 //note == and comparison is not same
 // in comparison null cnvt to 0 but not in ==
+// two type of data primitive and non primitive
+//  how store in memory
+// primitive - string , number , boolean , null , undefined , symbol -> call by value copy to copy
+// non primitive - object , array , function -> call by refrence
+// statical typing - js is dynamic typing   
+// You don’t have to declare variable types explicitly.
+
+// The type is determined at runtime, not at compile time.
+
+// Variables can change their type as the program runs.
+const id = Symbol('id')
+const id2 = Symbol('id')
+console.log(id === id2)
+//not same 
+const num = 12337n // adding n cnvt to bigint
+console.log(typeof num)
+// type of null - object
+// typeof undefined - undefined
+// typeof symbol - symbol
+// typeof bigint - bigint
+// typeof object - object
+// typeof function - function object
