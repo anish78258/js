@@ -55,10 +55,54 @@ const id2 = Symbol('id')
 console.log(id === id2)
 //not same 
 const num = 12337n // adding n cnvt to bigint
-console.log(typeof num)
+console.log(2 - "5")
 // type of null - object
 // typeof undefined - undefined
 // typeof symbol - symbol
 // typeof bigint - bigint
 // typeof object - object
 // typeof function - function object
+
+
+// stack primitive heap non primitive
+//heap se refrence milta on the other hand stack se copy milta
+
+
+const name = "ram"
+const name2 = "ram"
+//old method
+console.log(name + name2)
+//new method
+console.log(`${name} ${name2}`)
+//primitive new me new ke sath bhi koi fark nahi pda
+
+const game = {
+    name : "mario",
+    age : 20
+}
+// const krne ke bawajud change ho gya
+
+let game2 = game
+game2.name = "luigi"
+console.log(game)
+
+//string method
+const names = "mohammad-Anish"
+names.charAt(3)
+names.indexOf("Anish")
+name.toLowerCase()
+name.toUpperCase()
+
+const slice = names.slice(0,4) // neg value can be used reverse value baiscally
+const substring = names.substring(0,4) // no neg value if give auto consider as 0
+
+console.log(slice)
+console.log(substring)
+
+const split = names.split("-") //output array
+console.log(split)
+
+const url = "https://www.google.com"
+const url2 = url.replace("google","youtube")
+console.log(url.includes("google"))
+console.log(url2)
